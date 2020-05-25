@@ -1,0 +1,313 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Be Vietnam';
+    position: relative;
+    
+}
+
+.background_pattern_container {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.background_pattern_top_wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.background_pattern_bottom_wrapper {
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.background_pattern_top_body {
+    height: 50rem;
+    width: 50rem;
+    object-fit: cover;
+    object-position: 5rem -5rem;
+}
+
+.background_pattern_bottom_body {
+    height: 50rem;
+    width: 50rem;
+    object-fit: cover;
+    object-position: -30rem 10rem;
+}
+
+.background_pattern_top_cta {
+    height: auto;
+    width: 45rem;
+    opacity: 0.2;
+    object-position: 30rem -35rem;
+}
+
+.background_pattern_bottom_cta {
+    height: auto;
+    width: 45rem;
+    opacity: 0.2;
+    object-position: 0rem 0rem;
+}
+
+.section_testimony {
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 5rem;
+}
+
+#header_links {
+    display: flex;
+    list-style:none;
+}
+
+.link_items {
+    cursor: pointer;
+}
+
+    .link_items > a {
+        text-decoration: none;
+        color: dimgray;
+        font-weight: bold;
+        padding: 1rem 2rem;
+        font-size: small;
+    }
+
+        .link_items > a:hover {
+            color: lightgray;
+        }
+
+input {
+    box-shadow: 0rem 0.5rem 1.5rem -0.5rem hsl(12, 88%, 59%);
+    padding: 0rem 2rem;
+    cursor: pointer;
+}
+
+    input:hover {
+        background-color: hsl(12, 88%, 79%);
+    }
+
+.btn_rounded {
+        
+    color: white;
+    border-radius: 1.5rem;
+    border-style: none;
+    background-color: hsl(12, 88%, 59%);
+    height: 3rem;
+    font-weight: bold;
+    outline:none;
+}
+
+.btn_invert {
+    color: hsl(12, 88%, 59%);
+    background-color: white;
+}
+
+.btn_invert:hover {
+    color:white;    
+}
+
+
+.image_container {
+    padding: 0rem;
+    text-align:center;
+}
+
+section {
+    display: flex;
+    padding: 2rem 10rem;
+    justify-content: center;
+}
+
+.heading {
+    margin: 0;
+    color: hsl(228, 39%, 23%);
+    font-weight: bolder;
+}
+
+.heading_invert {  
+    color: white;
+}
+
+.description {
+    color: darkgray;
+    font-weight: 500;
+    width: 60%;
+    padding-bottom:2rem;
+}
+
+
+.grid_item_wrapper {
+    display: grid;
+    margin: 0;
+    grid-template-columns: 5rem 27rem;
+    grid-template-rows: auto auto;
+    grid-auto-rows: minmax(4rem,auto);
+}
+
+.grid_numbering {
+    display: flex;
+    justify-content: center;
+    width: 4rem;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.grid_heading {
+    align-self: center;
+    font-size: small;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.grid_description {
+    width: auto;
+    text-align: justify;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.testimony_list {
+    display: flex;
+    overflow-x: scroll;
+    padding-top: 3rem;
+    width: 130%;
+    margin-left: -15%;
+    transition: all 0.3s ease;
+}
+
+    .testimony_list::-webkit-scrollbar {
+        cursor: pointer;
+        opacity: 0;
+        height: 0.5rem;
+        padding: 1rem 0;
+    }
+
+    .testimony_list::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+    }
+
+    .testimony_list:hover::-webkit-scrollbar {
+        opacity: 1;
+        background-color: lightgray;
+    }
+
+    .testimony_list:hover::-webkit-scrollbar-thumb {
+        background-color: grey;
+    }
+
+.heading_testimony {
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+.testimony_container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 98%);
+    margin: 0 1rem;
+    min-width: 30rem;
+}
+
+.image_testimony_profile_container {
+    margin-top: -2.5rem;
+}
+
+.image_testimony_profile {
+    height: 5rem;
+}
+
+.heading_testimony_profile {
+    font: small;
+    padding: 1rem 0;
+}
+
+.description_testimony_profile {
+    font: small;
+    text-align: center;
+}
+
+.button_testimony {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+footer > div {
+    padding: 3rem 10rem;
+}
+
+.footer_cta_container {
+    overflow-y: hidden;
+    position: relative;    
+    background-color: hsl(12, 88%, 59%);
+}
+
+.footer_cta_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.heading_cta {
+    width: 35%;
+}
+
+.footer_link_items {
+    margin-bottom: 1rem;
+}
+
+    .footer_link_items > a {
+        color: white;
+        font-size: inherit;
+        font-weight: 400;
+        padding: 0;
+    }
+
+        .footer_link_items > a:hover {
+            color: hsl(12, 88%, 59%);
+        }
+
+.white_logo > iframe > html > body > svg > g > path {
+    fill: #ffff;
+}
+
+.social_media_icons {
+    width: 1.5rem;
+    padding: 0.1rem;
+    cursor: pointer;
+}
+
+    .social_media_icons:hover {
+    }
