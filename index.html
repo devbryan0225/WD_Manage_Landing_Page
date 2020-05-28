@@ -11,32 +11,9 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-        .footer_link_items {
-            margin-bottom: 1rem;
-        }
-            .footer_link_items > a {
-                color: white;
-                font-size: inherit;
-                font-weight: 400;
-                padding:0;
-            }
+        @media only screen and (max-width:375px) {
 
-            .footer_link_items > a:hover {
-                color: hsl(12, 88%, 59%);
-            }
 
-        .white_logo > iframe > html > body > svg > g > path {
-            fill:#ffff;
-        }
-
-        .social_media_icons {
-            width: 1.5rem;
-            padding: 0.1rem;
-            cursor:pointer;
-        }
-
-        .social_media_icons:hover {
-            
         }
     </style>
 </head>
@@ -68,23 +45,27 @@
         </ul>
 
         <input class="btn_rounded" type="button" value="Get Started" />
+        <input class="header_checkbox" type="checkbox" />
+        <a href="#"><img src="images/icon-hamburger.svg"/></a>
     </header>
 
-    <section>
-        <div style="padding:0rem; flex:1;">
-            <h1 class="heading" style="line-height: 5rem; font-size:3.5rem;">Bring everyone together to build better products.</h1>
+    <section class="section_reverse">
+        <div class="intro_container">
+            <h1 class="heading heading_intro" >
+                Bring everyone together to build better products.
+            </h1>
             <p class="description">
                 Manage makes it simple for software teams to plan day-to-day
                 tasks while keeping the larger team goals in view.
             </p>
             <input class="btn_rounded" type="button" value="Get Started" />
         </div>
-        <div class="image_container" style="flex:1;">
-            <img src="images/illustration-intro.svg" style="height:35rem;" />
+        <div class="image_container" style=" flex: 1;">
+            <img src="images/illustration-intro.svg" class="image_intro" />
         </div>
     </section>
     <section>
-        <div style=" flex: 1;">
+        <div style="flex: 1; ">
             <h1 class="heading" style="font-size:3rem;">What’s different about Manage?</h1>
             <p class="description">
                 Manage provides all the functionality your team needs, without
@@ -93,7 +74,7 @@
             </p>
         </div>
         <div style="flex: 1;">
-            <ul style="list-style:none; margin:0;">
+            <ul class="list_benefits">
                 <li class="grid_item_wrapper">
                     <div class="btn_rounded grid_numbering">01</div>
                     <div class="grid_heading">

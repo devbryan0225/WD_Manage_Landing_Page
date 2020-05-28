@@ -8,11 +8,11 @@
     }
 
 body {
+    width: 100%;
     margin: 0;
     font-size: 16px;
     font-family: 'Be Vietnam';
     position: relative;
-    
 }
 
 .background_pattern_container {
@@ -21,6 +21,7 @@ body {
     top: 0;
     right: 0;
     z-index: 0;
+    
 }
 
 .background_pattern_top_wrapper {
@@ -80,6 +81,10 @@ header {
 #header_links {
     display: flex;
     list-style:none;
+}
+
+.header_checkbox {
+    opacity: 0.5;
 }
 
 .link_items {
@@ -157,6 +162,24 @@ section {
     padding-bottom:2rem;
 }
 
+.intro_container {
+    padding: 0rem;
+    flex: 1;
+}
+
+.image_intro {
+    height: 35rem;
+}
+
+.heading_intro {
+    line-height: 5rem;
+    font-size: 3.5rem;
+}
+
+.list_benefits {
+    list-style: none;
+    margin: 0;
+}
 
 .grid_item_wrapper {
     display: grid;
@@ -311,3 +334,116 @@ footer > div {
 
     .social_media_icons:hover {
     }
+
+@media only screen and (max-width:375px) {
+
+    header > .btn_rounded {
+        display: none;
+    }
+
+    section {
+        padding: 2rem 1rem;
+        flex-direction: column;
+        /*width: 100%;*/
+    }
+
+    .section_reverse {
+        flex-direction: column-reverse;
+    }
+
+    .background_pattern_top_body {
+        height: 35rem;
+        width: 35rem;
+        object-position: 14rem -13rem;
+    }
+
+    .background_pattern_bottom_body {
+        height: 25rem;
+        width: 25rem;
+        object-position: -15rem 5rem;
+    }
+
+
+    #header_links {
+        display: none;
+        padding: 2rem 2rem;
+        width: 70%;
+        background-color: white;
+        border-radius: 0.2rem;
+        position: absolute;
+        top: 2rem;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 1rem 1rem 20rem grey;
+    }
+
+    input.header_checkbox:checked ~ ul#header_links {
+        display: flex !important;
+    }
+
+    .intro_container {
+        text-align: center;
+    }
+
+    .image_intro {
+        height: 19rem;
+    }
+
+    .heading {
+        text-align: center;
+        line-height: 3rem;
+    }
+
+    .heading_intro {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        text-align: center;
+        width: 100%;
+    }
+
+    .list_benefits {
+        padding: 0;
+    }
+
+    .grid_item_wrapper {
+        grid-template-columns: 4rem auto;
+    }
+
+    .grid_description {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: justify;
+    }
+
+    footer {
+        /*width: 100%;*/
+    }
+
+        footer > div {
+            padding: 6rem 1rem;
+        }
+
+    .footer_links {
+        flex-direction: column-reverse;
+    }
+
+    .background_pattern_top_cta {
+        display: none;
+    }
+
+    .background_pattern_bottom_cta {
+        width: 35rem;
+        object-position: -30rem 2rem;
+    }
+
+    .footer_cta_content {
+        flex-direction: column;
+    }
+
+    .heading_cta {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
